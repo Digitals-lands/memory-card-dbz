@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <audio id="monAudio" src="audio/back.mp3" autoplay preload="auto"></audio>
+
+  <div id="video-container" style="display: block;" >
+    <video autoplay muted  id="background-video">
+      <source src="video/cinematic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div id="image-container" class="background-image" style="display: none; background-image: url('img/header.jpg');">
+  
+  
+ 
+  </div>
+
+
+  <div id="memory-game" style="display: none;">
+
+    <div class="grid">
+
+    </div>
+  </div>
+  <div id="attack-container" style="display: none;">
+    <video    id='background-attack'>
+      <source id='source_attack' src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <button class="pass" onclick="skipVideo()">Passer</button>
+
+  <button id="score">
+
+  </button>
+  <script src="script.js"></script>
+</body>
+
+</html>
